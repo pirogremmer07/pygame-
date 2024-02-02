@@ -30,14 +30,14 @@ def load_char(c,x,y,r,l,j):
             l=False
             screen.blit(pygame.transform.scale(sprite,(1420,1412)),(x,y),(226*2,0,2*48,2*90))
             
-        
+#main body loop for display        
 def disp():
     run=True
     right,left,jump=False,False,False
     xi,yi=250,200
     count=0
     jumpcount1=9
-    font="monospace"
+
     while run:
         key=pygame.key.get_pressed()
         if key[pygame.K_RIGHT] and xi<610:
